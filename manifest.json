@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "name": "履歴表示とか",
+    "description": "description",
+    "browser_action": {
+        "default_icon": "/image/icon.png",
+        "default_title": "サンプル",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "/image/icon.png"
+    },
+    "background": {
+        "scripts": [
+            "/assets/js/background.js"
+        ]
+    },
+    "permissions": [
+        "background",
+        "storage",
+        "alarms",
+        "tabs",
+        "history"
+    ]
+}

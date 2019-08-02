@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Qiitaサンプル</title>
+    <link rel="stylesheet" type="text/css" href="/static/dist/semantic.min.css">
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/push.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/dashboard.css">
+</head>
+
+<body>
+<div class="ui inverted huge borderless fixed fluid menu blue column">
+    <a class="header item" id='top'>Qiitaサンプル</a>
+</div>
+
+<div class="container">
+    <div class="ui attached message">
+        <div class="header">
+            <a>Qiitaサンプル</a>
+        </div>
+    </div>
+
+    <div class="ui attached fluid segment">
+        <div class="ui stackable four column grid">
+            <div class="five wide column">
+                <div class="ui card">
+                    <div class="extra content">
+                        <a>
+                            <container id='start_container'>
+                                <button class="blue fluid ui button"  id='start_push'>START</button>
+                            </container>
+                            <container id='pomodoro_container' hidden>
+                                <div class="ui orange fluid centered message" id="start_message_label">
+                                    <div class="column center aligned">start</div>
+                                </div>
+                                <div class="ui blue fluid centered message" id="rest_message_label" hidden>
+                                    <div class="column center aligned">
+                                         end
+                                    </div>
+                                </div>
+                            </container>
+                        </a>
+                    </div>
+                    <div class="extra content" id='end_container'>
+                        <a>
+                            <container >
+                                <button class="orange fluid ui button" id='end_push'>THE END</button>
+                            </container>
+                        </a>
+                    </div>
+                    <div class="extra content" id='confirm_container'>
+                        <a>
+                            <container>
+                                <button class="green fluid ui button" id='confirm_push'>CONFIRM</button>
+                            </container>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui attached fluid segment" id='start_message_container'>
+        <div class="ui negative orange message"  id="status_open">
+            <div class="header">
+                status：open
+            </div>
+        </div>
+        <div class="ui negative blue message" id="status_start" hidden>
+            <div class="header">
+                status：start
+            </div>
+        </div>
+        <div class="ui negative red message" id="status_end" hidden>
+            <div class="header">
+                status：end
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/assets/js/main.js"></script>
+</html>
